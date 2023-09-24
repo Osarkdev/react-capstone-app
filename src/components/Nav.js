@@ -8,12 +8,12 @@ export default function Nav() {
             <img src='/Logo .svg' alt='logo' />
             <div className='linkdiv'>
                 <ul className='links'>
-                    <li><a>Home</a></li>
-                    <li><a>About</a></li>
-                    <li><a>Menu</a></li>
-                    <li><a>Reservations</a></li>
-                    <li><a>Order Online</a></li>
-                    <li><a>Log in</a></li>
+                    <li><a href='/'>Home</a></li>
+                    <li><a href='/'>About</a></li>
+                    <li><a href='/'>Menu</a></li>
+                    <li><a href='/booking'>Reservations</a></li>
+                    <li><a href='/'>Order Online</a></li>
+                    <li><a href='/'>Log in</a></li>
                 </ul>
             </div>
         </div>
