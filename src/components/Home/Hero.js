@@ -2,23 +2,23 @@ import React from 'react'
 
 export default function Hero() {
   return (
-    <div>
+    <div className='hero'> 
         <div>
-            <h2>
+            <h1>
                 Little Lemon
-            </h2>
-            <h6>
+            </h1>
+            <h5>
                 Chicago
-            </h6>
+            </h5>
             <p>
-                typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset 
+            Curabitur vitae lacinia nisi. Sed sollicitudin mi eu nibh semper suscipit. Duis vel tellus dui. Vivamus eget justo ipsum. Vivamus facilisis nisl quis ante fringilla aliquam. Nam consectetur, magna sit amet condimentum ultricies, erat lacus venenatis neque, pulvinar fringilla tortor elit sit amet felis.
             </p>
-            <button>
+            <button className='reserve'>
                 Reserve a table
             </button>
         </div>
-        <div>
-            <img src='/restauranfood.jpg' alt='hero' width={'200px'}/>
+        <div className='image-div'>
+            <img src='/restauranfood.jpg' alt='hero' width={'200px'} height={'150px'} style={{marginTop: '5rem'}}/>
         </div>
     </div>
   )

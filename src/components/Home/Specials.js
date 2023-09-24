@@ -3,20 +3,20 @@ import SpecialItem from './SpecialItem'
 
 export default function Specials() {
   return (
-    <div>
-        <div>
+    <div className='specials'>
+        <div className='specials-title'>
             <div>
                 <h3>
                     Specials
                 </h3>
             </div>
-            <div>
-                <button>
+            <div className='menu-div'>
+                <button className='menu'>
                     Online Menu
                 </button>
             </div>
         </div>
-        <div>
+        <div className='specials-items'>
             <SpecialItem
                 image='greek salad.jpg'
                 title='Greek Salad'

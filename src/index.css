@@ -37,4 +37,126 @@ nav > div > div{
   text-decoration: none;
 }
 
+.hero{
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  padding: 5px 15rem;
+  background-color: '#406870';
+}
 
+
+.reserve {
+  background-color: black;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-top: 2rem;
+}
+
+.reserve:hover{
+  cursor: pointer;
+  padding: 16px 34px;
+}
+
+.menu {
+  background-color: black;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.menu:hover{
+  cursor: pointer;
+  padding: 16px 34px;
+}
+
+.specials-title{
+  display: flex;
+  width: 100%;
+}
+
+.specials{
+  padding: 5px 15rem;
+  margin-top: 10rem;
+}
+
+.menu-div{
+  margin-left: auto;
+  margin-right: 0;
+}
+
+.specials-items{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-top: 2rem;
+  column-gap: 10px;
+}
+
+.card{
+  box-shadow: 0 8px 8px 0 rgba(0,0,0,0.2);
+  min-height: 500px;
+}
+
+.card-container{
+  padding: 10px;
+}
+
+.card-title{
+  display: flex;
+}
+
+.card-price{
+  margin-left: auto;
+  margin-right: 0;
+  color: green;
+}
+
+.card-actions {
+  margin-top: auto;
+}
+
+.tes-section{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  column-gap: 10px;
+}
+
+.tes-profile{
+  display: flex;
+}
+
+.about{
+  padding: 5px 15rem;
+  margin-top: 10rem;
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  column-gap: 20px;
+  margin-bottom: 15rem;
+}
+
+.image-about{
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  position: relative;
+  margin-top: 3rem;
+}
+
+.image-top{
+  grid-column: 1 / span 8;
+  grid-row: 1;
+  padding-top: 20%;
+  z-index: 1;
+}
+
+.imega-bottom{
+  grid-column: 4 / -1;
+  grid-row: 1;
+}

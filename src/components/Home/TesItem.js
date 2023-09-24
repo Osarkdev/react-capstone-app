@@ -3,11 +3,11 @@ import React from 'react'
 export const TesItem = ({name, review}) => {
   return (
     <div>
-        <h6>
+        <h5>
             Rating
-        </h6>
-        <div>
-            <img src='avatar.jpg' alt='avatar' width={'25px'}/>
+        </h5>
+        <div className='tes-profile'>
+            <img src='avatar.jpg' alt='avatar' width={'40px'}/>
             <p>{name}</p>
         </div>
         <p>
