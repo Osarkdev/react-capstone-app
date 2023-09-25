@@ -41,14 +41,23 @@ nav > div > div{
   display: grid;
   grid-template-columns: 2fr 1fr;
   padding: 5px 15rem;
-  background-color: '#406870';
+  background-color: #406870;
+  min-height: 450px;
+  color: white;
+  column-gap: 5rem;
+}
+
+.hero h1{
+  color: #F4CE14;
+  margin-top: 3rem;
+  letter-spacing: 2px;
 }
 
 
 .reserve {
-  background-color: black;
+  background-color: #F4CE14;
   border: none;
-  color: white;
+  color: black;
   padding: 15px 32px;
   text-align: center;
   text-decoration: none;
@@ -160,3 +169,50 @@ nav > div > div{
   grid-column: 4 / -1;
   grid-row: 1;
 }
+
+.booking-page{
+  display: flex;
+  align-content: center;
+}
+
+.booking-page div{
+  margin: 1rem auto 5rem auto;
+  width: 400px
+}
+
+input{
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 2px solid #F4CE14;
+}
+
+input[type=submit] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  background-color: black;
+  color: white;
+}
+
+select{
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 2px solid #F4CE14;
+}
+
+option{
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+
+label{
+  font-size: 20px;
+}
+
