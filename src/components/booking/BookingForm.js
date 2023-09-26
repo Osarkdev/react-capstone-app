@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 
-export default function BookingForm() {
+export default function BookingForm({availabletimes, updateTimes}) {
 
     const [values, setValues] = useState({
         date: '',
@@ -9,13 +9,21 @@ export default function BookingForm() {
         ocassion: 'birthday',
     })
 
+    const handleTimes = e => {
+        setValues({
+            ...values,
+            date: e.target.value
+        })
+
+        updateTimes(e.target.value);
+    }
+
     const handleChange = (e) => {
         setValues({
             ...values,
             [e.target.name] : e.target.value
         })
     }
-
 
     const handleSubmit = e => {
         e.preventDefault()
@@ -28,7 +36,7 @@ export default function BookingForm() {
         <input 
             type="date" 
             id="res-date" 
-            onChange={handleChange}
+            onChange={handleTimes}
             name='date'
             value={values.date}
         />
@@ -39,12 +47,11 @@ export default function BookingForm() {
             name='time'
             value={values.time}
         >
-            <option>17:00</option>
-            <option>18:00</option>
-            <option>19:00</option>
-            <option>20:00</option>
-            <option>21:00</option>
-            <option>22:00</option>
+            {
+                availabletimes.map(time => (
+                    <option key={time}>{time}</option>
+                ))
+            }
         </select>
         <label for="guests">Number of guests</label>
         <input 
