@@ -32,7 +32,7 @@ export default function BookingForm({availabletimes, updateTimes}) {
 
   return (
     <form style={{display: 'grid', gap: '30px', marginTop: '3rem'}} onSubmit={handleSubmit}>
-        <label for="res-date">Choose date</label>
+        <label htmlform="res-date">Choose date</label>
         <input 
             type="date" 
             id="res-date" 
@@ -40,7 +40,7 @@ export default function BookingForm({availabletimes, updateTimes}) {
             name='date'
             value={values.date}
         />
-        <label for="res-time">Choose time</label>
+        <label htmlform="res-time">Choose time</label>
         <select 
             id="res-time " 
             onChange={handleChange}
@@ -53,7 +53,7 @@ export default function BookingForm({availabletimes, updateTimes}) {
                 ))
             }
         </select>
-        <label for="guests">Number of guests</label>
+        <label htmlform="guests">Number of guests</label>
         <input 
             type="number" 
             placeholder="1" 
@@ -64,7 +64,7 @@ export default function BookingForm({availabletimes, updateTimes}) {
             name='guests'
             value={values.guests}
         />
-        <label for="occasion">Occasion</label>
+        <label htmlform="occasion">Occasion</label>
         <select id="occasion" onChange={handleChange}>
             <option>Birthday</option>
             <option>Anniversary</option>

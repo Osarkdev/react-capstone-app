@@ -1,4 +1,4 @@
-import React, { useReducer, useState } from 'react'
+import React, { useEffect, useReducer, useState } from 'react'
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 import HomePage from "../HomePage";
@@ -9,7 +9,6 @@ const reducer = (state, action) => {
   return state;
 }
 
-
 export default function Main() {
 
   function updateTimes (date) {
@@ -18,9 +17,14 @@ export default function Main() {
     });
   }
 
-  const initialTimes = {availabletimes: ['17:00', '18:00', '19:00', '20:00', '21:00', '22:00']}
+  function initializeTimes(){
 
-  const [state, dispatch] = useReducer(reducer, initialTimes);
+    const initialTimes = {availabletimes: ['17:00', '18:00', '19:00', '20:00', '21:00', '22:00']}
+
+    return initialTimes
+  }
+
+  const [state, dispatch] = useReducer(reducer, initializeTimes());
 
   return (
     <main>
